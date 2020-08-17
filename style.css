@@ -23,6 +23,7 @@ body {
     overflow: hidden;
     min-width: 50rem;
     border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(180, 180, 180);
 }
 
 /* Img Side */
@@ -106,10 +107,95 @@ body {
     align-self: center;
     justify-self: center;
     width: 1.65rem;
+    position: relative;
+    cursor: pointer;
 }
 
 /* Share Active State */
 
+
+.speech-bubble {
+    background-color: hsl(217, 19%, 35%);
+    border: none;
+    border-radius: 5px;
+    width: 15rem;
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+    top: -240%;
+    right: -20%;
+    color: white;
+    letter-spacing: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px rgb(175, 173, 173);
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    position: absolute;
+    right: 3%;
+    bottom: -16%;
+}
+
 .hidden {
     display: none;
+}
+
+.share-active {
+    background-color: hsl(217, 19%, 35%);
+}
+
+.share-icon-active path {
+    fill: hsl(210, 46%, 95%);
+}
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    .container {
+        min-height: 70vh;
+        min-width: 80vw;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .container .drawers {
+        width: 100%;
+    }
+
+
+    .main-photo {
+        background-image: none;
+        max-height: 30vh;
+    }
+
+    .text {
+        padding-right: 12rem;
+        flex-direction: column;
+    }
+
+    .main-head {
+        padding-top: 1rem;
+        font-size: 1.05rem;
+    }
+
+    .center-text {
+        color: hsl(214, 17%, 51%);
+        font-weight: 500;
+        padding-bottom: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .author {
+        margin-top: 2.5rem;
+    }
+
+    .author img {
+        width: 15%;
+    }
 }
