@@ -1,3 +1,3 @@
-# Frontend-Mentor---Challenge-1
+Article Snippet
 
-First chllanege from Frontend Mentor - simple article snippet with active share state.
+Simple article snippet with active share state.
